@@ -7,7 +7,7 @@ Summary:	Alias - aliasing Perl data for convenient access
 Summary(pl):	Alias - aliasowanie danych w Perlu dla wygodniejszego dostêpu
 Name:		perl-Alias
 Version:	2.32
-Release:	8
+Release:	9
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl

@@ -3,13 +3,14 @@ Summary:	Alias perl module
 Summary(pl):	Modu³ perla Alias
 Name:		perl-Alias
 Version:	2.32
-Release:	3
+Release:	4
 License:	GPL
 Group:		Development/Languages/Perl
+Group(de):	Entwicklung/Sprachen/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Alias/Alias-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
-BuildRequires:	perl >= 5.005_03-14
+BuildRequires:	perl >= 5.6
 %requires_eq	perl
 Requires:	%{perl_sitearch}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -30,30 +31,21 @@ perl Makefile.PL
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-strip --strip-unneeded $RPM_BUILD_ROOT/%{perl_sitearch}/auto/Alias/*.so
-
-(
-  cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/Alias
-  sed -e "s#$RPM_BUILD_ROOT##" .packlist >.packlist.new
-  mv .packlist.new .packlist
-)
-
-gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man3/* \
-        Changes README Todo
+gzip -9nf Changes README Todo
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc {Changes,README,Todo}.gz
+%doc *.gz
 
 %{perl_sitearch}/Alias.pm
 
 %dir %{perl_sitearch}/auto/Alias
-%{perl_sitearch}/auto/Alias/.packlist
 %{perl_sitearch}/auto/Alias/Alias.bs
 %attr(755,root,root) %{perl_sitearch}/auto/Alias/Alias.so
 

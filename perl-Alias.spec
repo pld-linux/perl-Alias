@@ -3,7 +3,7 @@ Summary:	Alias perl module
 Summary(pl):	Modu³ perla Alias
 Name:		perl-Alias
 Version:	2.32
-Release:	4
+Release:	5
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl

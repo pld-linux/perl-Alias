@@ -30,7 +30,7 @@ Convenient wrappers for "obscure" perl functionality.
 %setup -q -n Alias-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 
 %install

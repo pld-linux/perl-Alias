@@ -4,10 +4,10 @@ Summary(pl):	Modu³ perla Alias
 Name:		perl-Alias
 Version:	2.32
 Release:	3
-Copyright:	GPL
+License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
-Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Alias/Alias-%{version}.tar.gz
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Alias/Alias-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.005_03-14
 %requires_eq	perl
@@ -15,8 +15,8 @@ Requires:	%{perl_sitearch}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Alias module provides general mechanisms for aliasing perl data for convenient
-access.
+Alias module provides general mechanisms for aliasing perl data for
+convenient access.
 
 %description -l pl
 Modu³ perla Alias.

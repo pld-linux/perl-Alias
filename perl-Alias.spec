@@ -1,3 +1,4 @@
+%include	/usr/lib/rpm/macros.perl
 Summary:	Alias perl module
 Summary(pl):	Modu³ perla Alias
 Name:		perl-Alias
@@ -7,7 +8,8 @@ Copyright:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Alias/Alias-%{version}.tar.gz
-BuildRequires:	perl >= 5.005_03-10
+BuildRequires:	rpm-perlprov
+BuildRequires:	perl >= 5.005_03-12
 %requires_eq	perl
 Requires:	%{perl_sitearch}
 BuildRoot:	/tmp/%{name}-%{version}-root
@@ -17,7 +19,7 @@ Alias module provides general mechanisms for aliasing perl data for convenient
 access.
 
 %description -l pl
-Modu³ perla Alias 
+Modu³ perla Alias.
 
 %prep
 %setup -q -n Alias-%{version}

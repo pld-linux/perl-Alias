@@ -1,12 +1,11 @@
 %include	/usr/lib/rpm/macros.perl
-Summary:	Alias perl module
-Summary(es):	Modulo Perl Alias
-Summary(pl):	Modu³ perla Alias
-Summary(pt_BR):	Modulo Perl Alias
+Summary:	Alias - aliasing Perl data for convenient access
+Summary(pl):	Alias - aliasowanie danych w Perlu dla wygodniejszego dostêpu
 Name:		perl-Alias
 Version:	2.32
 Release:	8
-License:	GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Alias/Alias-%{version}.tar.gz
 # Source0-md5:	74aee28a4a20e643dd7656c6d8096aa8
@@ -15,17 +14,12 @@ BuildRequires:	perl-devel >= 5.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Alias module provides general mechanisms for aliasing perl data for
+Alias module provides general mechanisms for aliasing Perl data for
 convenient access.
 
-%description -l es
-Convenient wrappers for "obscure" perl functionality.
-
 %description -l pl
-Modu³ perla Alias.
-
-%description -l pt_BR
-Convenient wrappers for "obscure" perl functionality.
+Modu³ Perla Alias udostêpnia ogólne mechanizmy s³u¿±ce do aliasowania
+danych w Perlu dla wygodniejszego dostêpu.
 
 %prep
 %setup -q -n Alias-%{version}

@@ -3,7 +3,7 @@ Summary:	Alias perl module
 Summary(pl):	Modu³ perla Alias
 Name:		perl-Alias
 Version:	2.32
-Release:	5
+Release:	6
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Alias/Alias-%{version}.tar.gz

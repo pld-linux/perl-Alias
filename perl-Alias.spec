@@ -32,7 +32,7 @@ Convenient wrappers for "obscure" perl functionality.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install

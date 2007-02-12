@@ -4,7 +4,7 @@
 #
 %include	/usr/lib/rpm/macros.perl
 Summary:	Alias - aliasing Perl data for convenient access
-Summary(pl):	Alias - aliasowanie danych w Perlu dla wygodniejszego dostêpu
+Summary(pl.UTF-8):   Alias - aliasowanie danych w Perlu dla wygodniejszego dostÄ™pu
 Name:		perl-Alias
 Version:	2.32
 Release:	9
@@ -21,9 +21,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Alias module provides general mechanisms for aliasing Perl data for
 convenient access.
 
-%description -l pl
-Modu³ Perla Alias udostêpnia ogólne mechanizmy s³u¿±ce do aliasowania
-danych w Perlu dla wygodniejszego dostêpu.
+%description -l pl.UTF-8
+ModuÅ‚ Perla Alias udostÄ™pnia ogÃ³lne mechanizmy sÅ‚uÅ¼Ä…ce do aliasowania
+danych w Perlu dla wygodniejszego dostÄ™pu.
 
 %prep
 %setup -q -n Alias-%{version}

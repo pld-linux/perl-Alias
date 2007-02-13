@@ -4,7 +4,7 @@
 #
 %include	/usr/lib/rpm/macros.perl
 Summary:	Alias - aliasing Perl data for convenient access
-Summary(pl.UTF-8):   Alias - aliasowanie danych w Perlu dla wygodniejszego dostępu
+Summary(pl.UTF-8):	Alias - aliasowanie danych w Perlu dla wygodniejszego dostępu
 Name:		perl-Alias
 Version:	2.32
 Release:	9

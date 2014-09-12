@@ -53,7 +53,6 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/Alias.pm
 
 %dir %{perl_vendorarch}/auto/Alias
-%{perl_vendorarch}/auto/Alias/Alias.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Alias/Alias.so
 
 %{_mandir}/man3/*

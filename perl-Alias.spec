@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 
-%include	/usr/lib/rpm/macros.perl
 Summary:	Alias - aliasing Perl data for convenient access
 Summary(pl.UTF-8):	Alias - aliasowanie danych w Perlu dla wygodniejszego dostępu
 Name:		perl-Alias
